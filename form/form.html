@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genral Form</title>
+    <style>
+        pre{
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .container {
+            border: 2px solid black;
+            width: 60%;
+            margin-left: 300px;
+            
+        }
+        .d1{
+            border: 3px solid black;
+            height: 300px;
+            width: 0px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>General Admission Registration</h1>
+        <form>
+            <pre>
+                <label for="name">Name  :</label>   <input  id="name" type="text" placeholder="First Name"> <input type="text" placeholder="Last Name">
+
+                <label for="email">Email   : </label>   <input  id="email" type="email" placeholder="sample@example.com">
+
+                <label name="Gender">Gender:</label>  <input  name="Gender" type="radio" value="male">Male <input  name="Gender" value="female" type="radio">Female 
+
+                <label for="phone">Phone</label>    <input  id="phone" type="number" minlength="10" maxlength="10">
+
+                <label>Do </label>
+            </pre>
+            
+        </form>
+    </div>
+    <div class="d1">
+
+    </div>
+
+</body>
+
+</html>

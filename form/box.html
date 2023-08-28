@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             background-color: red;
+        }
+        .container {
+            display: flex; 
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .box {
+            background-color: white;
+            border: 2px solid black;
+            width: 600px;
+            height: 400px;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            padding: 10px;
+                       
+        }
+        .box1{
+            border-left: none;
+        }
+        h3{
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Genaral Admission Registration</h1>
+    <div class="container">
+       
+    <div class="box box1">
+        <h3>Form 1</h3>
+        <form>
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" placeholder="First name" id="name">
+                <input type="text" placeholder="last name">
+            </div>
+        </form>
+    </div>
+    <div class="box box2">
+        <h3>Form 2</h3>
+        <form>
+            <div>
+                <label for="name1">Name :</label>
+                <input type="text" placeholder="write name" id="name1">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

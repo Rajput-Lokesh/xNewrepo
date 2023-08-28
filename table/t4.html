@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table with image and links</title>
+
+    <style>
+
+        .main-table{
+            display: flex;
+            justify-content: center;
+        }
+        body {
+            background-image: linear-gradient(#333399,#FF00CC);
+            height: 700px;
+        }
+        img {
+            width: 100px;
+            border-radius: 20%;
+        }
+
+        table,th,td {
+            color: black;
+            border: 2px solid black;
+            padding: 20px;
+           
+        }
+
+        
+
+        th,td {
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        table{
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+
+        a {
+            color: antiquewhite;
+        }
+        a:hover {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <marquee><h1>Table with Image and Links</h1></marquee>
+    <div class="main-table">
+        
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Image.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Hobby</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img class="img" src="pro1.jpg"></td>
+                <td>Lokesh</td>
+                <td>Rajput</td>
+                <td>25</td>
+                <td><a target="_blank" href="https://www.icc-cricket.com/homepage" alt="icc-cricket.com">Cricket</a></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td><img class="img" src="pro2.jpg"></td>
+                <td>Sonali</td>
+                <td>Tayal</td>
+                <td>23</td>
+                <td><a target="_blank" href="https://www.youtube.com/watch?v=glpsw0LJBIo&ab_channel=SonySAB" alt="jetha-lal-lover">Tarak mehta ka ulta chashmah</a></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td><img class="img" src="pro3.jpg"></td>
+                <td>Mata</td>
+                <td>Shree</td>
+                <td>47</td>
+                <td><a target="_blank" href="https://www.youtube.com/watch?v=hRzbbwtU0Og&ab_channel=ShemarooFilmiGaane">Old-Songs-Lover</a></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</div>
+    
+</body>
+</html>

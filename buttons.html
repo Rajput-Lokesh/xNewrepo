@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <style>
+        /* button {
+                background-color: rgb(152, 82, 218);
+                color: white;
+                border-radius: 2px;
+                height: 36px;
+                width: 105px;
+                border: none;
+
+
+            } */
+        .subscribe-button {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border-radius: 2px;
+            height: 36px;
+            width: 105px;
+            border: none;
+            cursor: pointer;
+            transition: opacity, 1s;
+            margin-right: 8px;
+            transition: opacity 0.15s;
+        }
+
+        .subscribe-button:hover {
+            opacity: 0.8;
+        }
+
+        .subscribe-button:active {
+            opacity: 0.5;
+        }
+
+        .join--button {
+            background-color: white;
+            color: rgb(74, 188, 233);
+            border: 2px;
+            border-style: solid;
+            border-color: rgb(74, 188, 233);
+            border-radius: 2px;
+            height: 36px;
+            width: 105px;
+            cursor: crosshair;
+            transition: background-color 0.15s, color 0.15s;
+        }
+
+        .join--button:hover {
+            background-color: rgb(74, 188, 233);
+            color: white;
+        }
+
+        .join--button:active {
+            opacity: 0.7;
+        }
+
+
+        .tweet-button {
+            background-color: rgb(31, 201, 243);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 105px;
+            border-radius: 18px;
+            font-weight: bold;
+            font-size: large;
+            cursor: grab;
+            margin-left: 8px;
+            transition: box-shadow 0.15s;
+        }
+
+        .tweet-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .uber-button {
+            background-color: black;
+            color: white;
+            height: 36px;
+            width: 105px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+
+        .uber-button:hover {
+            background-color: rgb(78, 75, 75);
+        }
+
+        .amz-button {
+            background-color: yellow;
+            border: none;
+            height: 36px;
+            width: 200px;
+            border-radius: 18px;
+            opacity: 0.9;
+        }
+
+        .amz-button:hover {
+            opacity: 1;
+        }
+
+        .git-button {
+            background-color: rgb(76, 212, 76);
+            color: white;
+            font-weight: bold;
+            height: 36px;
+            width: 105px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .git-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .link-button {
+            background-color: rgb(45, 47, 175);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 200px;
+            border-radius: 18px;
+            transition: background-color 0.15s;
+        }
+
+        .link-button:hover {
+            background-color: blue;
+        }
+
+        .link2-button {
+            background-color: white;
+            color: rgb(31, 201, 243);
+            border: solid 1px;
+            font-weight: bold;
+            height: 36px;
+            width: 70px;
+            border-radius: 18px;
+            transition: border 0.15s;
+        }
+
+        .link2-button:hover {
+            border: solid 4px;
+        }
+
+        .cli-button {
+            background: white;
+            border: solid red;
+            padding: 5px 15px;
+            border-radius: 2px;
+            transition: background-color 0.15s, color 0.15s;
+            cursor: not-allowed;
+        }
+
+        .cli-button:hover{
+            background-color: red;
+            color: white;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            color: black;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .btng{
+            background-color: rgb(120, 204, 120);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            float: left;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btng:hover{
+            background-color: green ;
+        }
+
+
+        .btngv{
+            background-color: rgb(9, 199, 136);
+            border: none;
+            display: block;
+            padding: 5px 10px;
+            margin: 0cm;
+            color: white;
+        }
+        .btngv:hover{
+            background-color:rgb(7, 238, 161);
+        }
+
+        .p-btn{
+            background-color: rgb(76, 212, 76);
+            border: none;
+            padding: 10px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 0 rgb(126, 117, 117);
+            cursor: pointer;
+            font-size: 25px;
+            color: white;
+        }
+        .p-btn:hover{
+            background-color: green;
+        }
+
+        .p-btn:active{
+            background-color: #3e8e41;
+            box-shadow: 0 0 #666;
+            transform: translateY(4px);
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <button>tag selector</button>
+
+    <br><br>
+    <h5>Pressed Effect</h5>
+    <button class="p-btn">click</button>
+    <h5>Horizontal Button Groups</h5>
+    <button class="btng">Button1</button><button class="btng">Button2</button><button class="btng">Button3</button><button class="btng">Button4</button><br>
+    <h5>Vertical Button Groups</h5>
+    <button class="btngv">Button1</button><button class="btngv">Button2</button><button class="btngv">Button3</button><button class="btngv">Button4</button><br>
+    <h5>Button on Image</h5>
+    <div class="container">
+        <img alt="galaxy images"
+            src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
+            height="300">
+        <button class="btn">click</button>
+    </div>
+    <h5>Click button</h5>
+    <button class="cli-button">click here</button>
+    <h5>Linked-In button</h5>
+    <button class="link-button">Apply on company website</button> <button class="link2-button">Save</button>
+    <h5>Github button</h5>
+    <button class="git-button">Sign Up</button>
+    <h5>Amazon button</h5>
+    <button class="amz-button">Add to Cart</button>
+    <h5>Uber button</h5>
+    <button class="uber-button">Request Now</button>
+    <h5>Youtube button</h5>
+    <button class="subscribe-button">SUBSCRIBE</button>
+
+    <h5>Blank Button</h5>
+
+    <button class="join--button">JOIN</button>
+    <h5>Tweeter button</h5>
+
+    <button class="tweet-button">Tweet</button>
+
+
+
+
+
+    <!-- <button>JOIN</button>
+        <button>TWEET</button> -->
+</body>
+
+</html>

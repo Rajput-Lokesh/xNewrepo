@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic table</title>
+
+    <style>
+             
+        table,td,th {
+            
+            border: 2px solid black;
+            border-top: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px 40px;
+        }
+
+        th{
+            background-color: #B8BAB9;
+        }
+
+        .name{
+            background-color: #D5D5D5;
+        }
+
+        .center-table {
+            display: flex;
+            justify-content: center;
+            margin-top: 0%;
+        }
+
+        
+    </style>
+
+
+</head>
+<body>
+    <h1 align="center">Basic table with center allignment</h1>
+    <div class="center-table">
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Person</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="name">Chris</td>
+                <td>38</td>
+            </tr>
+
+            <tr>
+                <td class="name">Dennis</td>
+                <td>45</td>
+            </tr>
+
+            <tr>
+                <td class="name">Sarah</td>
+                <td>29</td>
+            </tr>
+
+            <tr>
+                <td class="name">Karen</td>
+                <td>47</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+</body>
+</html>

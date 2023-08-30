@@ -11,13 +11,15 @@
         .container {
             display: flex; 
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 20px;         
+            margin-left: 100px;
         }
         .box {
             background-color: white;
-            border: 2px solid black;
+            border: 2px solid rgba(0,0,0,0.1);
             width: 600px;
-            height: 400px;
+            height: 600px;
+            
             border-top: none;
             border-right: none;
             border-bottom: none;
@@ -25,8 +27,12 @@
                        
         }
         .box1{
-            border-left: none;
+            border-right: none;
+            
         }
+        
+        
+
         h3{
             align-items: center;
         }
@@ -42,20 +48,90 @@
        
     <div class="box box1">
         <h3>Form 1</h3>
-        <form>
+        <form method="get">
             <div>
                 <label for="name">Name :</label>
-                <input type="text" placeholder="First name" id="name">
+                <input autofocus type="text" placeholder="First name" id="name">
                 <input type="text" placeholder="last name">
+            </div><br>
+
+            <div>
+                <label for="email">Email :</label>
+                <input required type="email" placeholder="sample@example.com" id="email">
+            </div><br>
+
+            <div>
+                <label for="name">Gender :</label>
+                <input type="radio" name="Gender" value="male"> Male
+                <input type="radio" name="Gender" value="female"> Female
+            </div><br>
+
+            <div>
+                <label required for="phone">Phone :</label>
+                <input type="number"  id="phone" minlength="10" maxlength="10">
+            </div><br>
+ 
+            <div>
+                <label for="Emergency">Emergency Contact :</label><br>
+                <pre>           <input type="number"  id="Emergency" minlength="10" maxlength="10">
+                </pre>
+            </div><br>
+
+            <div>
+                <label for="parking">Do you require parking ?</label><br>
+                <pre>
+                    <input type="radio" name="parking"> Yes <input type="radio" name="parking"> No
+            </pre>
+            </div><br>
+            
+            <div>
+                <label for="op">What is your room preference?</label><br>
+                &emsp; &emsp; &emsp;<select id="op">
+                    <option value="Single-room">Single Room</option>
+                    <option value="Shared">Shared Room</option>
+                    <option value="No-room-needed">No Room Needed</option>
+                </select>
             </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
         </form>
     </div>
     <div class="box box2">
         <h3>Form 2</h3>
         <form>
             <div>
-                <label for="name1">Name :</label>
-                <input type="text" placeholder="write name" id="name1">
+                <h3>Do you have dietary</h3>
+                <input type="radio" id="dietary" value="none">
+                <label for="dietary">None :</label><br>
+                <input type="radio" id="dietary1" value="Vegetrian">
+                <label for="dietary1">Vegetrian :</label><br>
+                <input type="radio" id="dietary2" value="Glutten Allergy">
+                <label for="dietary2">Glutten Allergy :</label><br>
+                <input type="radio" id="dietary3" value="Lactose Allergy">
+                <label for="dietary3">Lactose Allergy :</label><br>
+                <input type="radio" id="dietary4" value="Nut Allergy">
+                <label for="dietary4">Nut Allergy :</label><br>
+                <input type="radio" id="dietary5" value="Shellfish Allergy">
+                <label for="dietary5">Shellfish Allergy :</label><br>
+                <h3>
+                    What activites will you attend?
+                </h3>
+                <input type="radio" id="Activities" value="Awards Gala Dinner">
+                <label for="Activities">Awards Gala Dinner :</label><br>
+                <input type="radio" id="Activities1" value="Luncheon">
+                <label for="Activities1">Luncheon :</label><br>
+                <input type="radio" id="Activities2" value="Town Hall">
+                <label for="Activities2">Town Hall :</label><br> 
+
+                <h3> Do you want to see the list of other attendees and their profiles on the official event app?</h3>
+                <input type="radio" id="profile" value="Yes" name="event">
+                <label for="profile">Yes :</label> 
+                <input type="radio" id="profile2" value="No" name="event">
+                <label for="profile2">No :</label><br>
+
             </div>
         </form>
     </div>

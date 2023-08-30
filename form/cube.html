@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Define each face based on direction */
+        .front {
+            background: rgba(0, 0, 0, 0.3);
+            transform: translateZ(50px);
+        }
+
+        .back {
+            background: rgba(0, 255, 0, 1);
+            color: black;
+            transform: rotateY(180deg) translateZ(50px);
+        }
+
+        .right {
+            background: rgba(196, 0, 0, 0.7);
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        .left {
+            background: rgba(0, 0, 196, 0.7);
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+
+        .top {
+            background: rgba(196, 196, 0, 0.7);
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        .bottom {
+            background: rgba(196, 0, 196, 0.7);
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+
+
+
+        .per250 {
+            perspective: 250px;
+        }
+
+        container {
+            width:500px;
+            height: 500px;
+            margin: 75px 0 0 75px;
+            border: none;
+        }
+
+        .cube {
+            width: 400px;;
+            height: 400px;
+            backface-visibility: visible;
+            perspective-origin: 1500px 1500px;
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>perspective</h1>
+    <div class="contaner">
+        <div class="cube per250">
+            <div class="face front">1</div>
+            <div class="face back">2</div>
+            <div class="face right">3</div>
+            <div class="face left">4</div>
+            <div class="face top">5</div>
+            <div class="face bottom">6</div>
+        </div>
+    </div>
+</body>
+
+</html>

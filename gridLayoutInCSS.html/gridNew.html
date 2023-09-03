@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: red;
+            color: white;
+        }
+        .container {
+            border: 10px solid blue;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            /* grid-template: 200px 200px 200px/300px 300px 300px; */
+            justify-content: center;
+
+        }
+
+        .item{
+            /* width: 100px;
+            height: 100px; */
+            border: 2px solid black;
+            margin: 5px;
+            padding: 20px;
+        }
+
+        div > div.item1{
+            background-image: linear-gradient(red,white);
+            grid-column-start:1;
+            grid-column-end: 4;
+        }
+        :is(.item2){
+            background-image: linear-gradient(blue,white);    
+        }
+        :where(div .item3) {
+            background-image: linear-gradient(green,white);
+            grid-row-start:2;
+            grid-row-end: 4;
+            
+        }
+        div:nth-child(4){
+            background-image: linear-gradient(yellow,white);
+        } 
+        div.item.item5 { 
+            background-image: linear-gradient(orange,white); 
+            color:black;
+            font-size: 30px;
+        } 
+        
+        [title=im6] { 
+            background-image: linear-gradient(crimson,white);
+            grid-column-start:2;
+            grid-column-end: 4;    
+        }
+
+        [style]{
+            background-image: linear-gradient(rgb(29, 166, 201),white);
+        }
+
+        /* [value^=1]{
+            background-image: linear-gradient(purple,white);
+        } */
+        
+        div.item8{
+            background-color: chartreuse;
+           
+
+
+        }
+
+        .item9{
+            background-color: aquamarine;
+            
+        }
+
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">div1</div>
+        <div class="item item2">div2</div>
+        <div class="item item3">div3</div>
+        <div class="item item4">div4</div>
+        <!-- <div class="item item5">div5</div> -->
+        <div title=im6 class="item item6">div6</div>
+        <!-- <div style="" class="item item7">div7</div> -->
+        <!-- <div class="item item8">div8</div> -->
+        <!-- <div class="item item9">div9</div> -->
+        <!-- <div value="11234" class="item item10">div10</div> -->
+
+    </div>
+    
+</body>
+</html>

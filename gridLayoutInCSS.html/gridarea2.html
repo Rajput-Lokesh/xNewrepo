@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #page{
+            display: grid;
+            
+            width: 100%;
+            height: 250px;
+            grid-template-areas: 
+                "head head head"
+                "nav nav nav"
+                "main main aside"
+                "main main aside"
+                "article article aside"
+                "article article aside"
+                "foot foot foot"
+            ;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(7,50px);
+            gap: 5px;
+
+        }
+
+        #page > header{
+            grid-area: head;
+            background-color: lightcoral;
+        }
+
+        #page > nav {
+            grid-area: nav;
+            background-color: lightgreen;
+        }
+        #page > main {
+            grid-area: main;
+            background-color: lightseagreen;
+        }
+        #page > aside{
+            grid-area: aside;
+            background-color: rgb(194, 137, 62);
+        } 
+
+        #page > article {
+            grid-area: article;
+            background-color: lightsalmon;
+        }
+        #page > footer{
+            grid-area: foot;
+            background-color: rgb(126, 202, 202);
+        }
+        .item{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="page">
+        <header class="item">Header</header>
+        <nav class="item">Navitagin</nav>
+        <main class="item">Main</main>
+        <aside class="item">Aside</aside>
+        <article class="item">article</article>
+        <footer class="item">Footer</footer>
+    </section>
+    
+</body>
+</html>

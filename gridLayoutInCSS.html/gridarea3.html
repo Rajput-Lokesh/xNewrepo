@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .item{
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            margin: 5px;
+            border: 3px solid black;
+            border-radius: 3px;
+        }
+
+        #page {
+            display: grid;
+            width: 100%;
+            height: 800px;
+
+            grid-template-areas:
+                "head head head"
+                "nav nav nav"
+                "aside1 section aside2"
+                "foot foot foot"
+                "back back back"
+            ;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 2fr 1.5fr 5fr 1fr 1fr;
+        }
+        #page > header {
+            grid-area: head;
+            background-color: grey;
+        }
+        #page > nav {
+            grid-area: nav;
+            background-color: rgb(44, 35, 35);
+            color: white;
+            display: grid;
+            justify-content: right;
+        }
+        #page > .aside1 {
+            grid-area: aside1;
+            background-color: darkmagenta;
+        }
+        #page > section {
+            grid-area: section;
+            padding: 5px;
+            background-color: rgb(219, 219, 43);
+        }
+        #page > section > .article1,.article2,.article3 {
+            padding: 23px 100px;
+            margin: 3px;
+            transition: transform .2s; /* Animation */
+            background-color: rgb(103, 167, 8);
+        }
+        #page > aside.aside2{
+            grid-area: aside2;
+            background-color: aqua;
+        }
+        #page > footer {
+            grid-area: foot;
+            background-color: lightseagreen;
+        }
+        #page > nav > ul > li {
+            list-style: none; 
+            display:inline-block;
+            margin: 10px;
+        }
+        li:hover{
+            border: 2px solid white;
+            padding: 10px;
+            color: red;
+        }
+        article:hover{
+           transform: scale(1.2);
+           border: transparent;
+           background-color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+      
+       #page >p{
+        grid-area: back;
+        background-color: red;
+       }
+       #page>p>a{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        display: grid;
+        justify-content: center;
+        /* align-items: center; */
+        margin-top: 23px;
+       }
+        
+
+
+    </style>
+
+</head>
+<body>
+    <div id="top"></div>
+   <div id="page">
+        <header title="Header of the website" class="item">Header</header>
+        <nav title="Navigation of the website"  class="item nav-bar">
+            <ul>
+                <li title="Click to go to Aside-1 section">Home</li>
+                <li>About Us</li>
+                <li>Features</li>
+                <li>Galley</li>
+                <li>Team</li>
+                <li>Contact Us</li>
+                <li><a href="#foot">Footer</a></li>
+                
+            </ul>
+        </nav>
+        <aside class="aside1 item">aside-1</aside>
+        <section class="item">
+            <h2 class="item" style="border: none; color:rgb(5, 2, 2);font-size:50px; font-family: Arial, Helvetica, sans-serif;">Section</h2>
+            <article class="article1 articleC item">article-1</article>
+            <article class="article2 articleC item">article-2</article>
+            <article class="article3 articleC item">article-3</article>
+        </section>
+        <aside class="aside2 item">aside-2</aside>
+        <footer id="foot"  class="item">Footer</footer>
+        <p><a href="#top">Back to top</a></p>
+        
+   </div>
+
+
+    
+</body>
+</html>

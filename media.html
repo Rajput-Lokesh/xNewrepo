@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 400px;
+            background-color: red;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr;
+            /* flex-wrap: wrap;
+            align-content: start; */
+
+            
+        }
+        
+
+        .item{
+            width: 300px;
+            height: 100px;
+            margin: 3px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            
+            align-items: center;
+        }
+
+        .item1{
+            background-image: linear-gradient(blue,white);
+        }
+
+        .container > .item2 {
+            background-image: linear-gradient(yellow,white);
+        }
+
+        div > .item3 {
+            background-image: linear-gradient(brown,white);
+        }
+        @media (min-width:400px) and (max-width:800px){
+            .container{
+                background-color: green;
+                grid-template-columns: 1fr;
+
+            }
+            
+            /* .item1{
+                flex-grow: 2;
+            } */
+            /* .item2{
+                flex-shrink: 2;
+            } */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">
+            <p>Button-1</p>
+             <p>xyz</p>
+    </div>
+        <div class="item item2">Button-2</div>
+        <div class="item item3">Image</div>
+    </div>
+</body>
+</html>

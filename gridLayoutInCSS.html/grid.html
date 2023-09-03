@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        body{
+            background-color: red;    
+        }
+        .container{
+            display: grid;
+
+            /* grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px; */
+            grid-template: 200px 200px 200px / 300px 300px 300px;
+
+            /* column-gap: 10px;
+            row-gap: 10px; */
+            gap: 5px;
+
+            
+
+           
+            
+        }
+        .item{
+            /* width: 200px;
+            height: 200px; */
+            background-color: aqua;
+            margin: 5px;
+            text-align: center;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            color:white;
+            background-color: blue;
+            font-size: 2rem;
+            
+        }
+        .item2{
+            overflow-x: auto;
+        }
+        .item3{
+            overflow: hidden;
+        }
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Grid Layout :: 1</h1>
+
+    <div class="container">
+        <div class="item1 item">1</div>
+        <div class="item2 item">2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur quas dolorem est quaerat inventore, unde voluptate. Eligendi, beatae velit! Quis atque nam tempore minus iure optio pariatur perferendis, velit, molestias eius unde corrupti consequuntur cumque consequatur. Quaerat maxime delectus inventore hic vel sapiente ab magnam animi expedita modi voluptates atque architecto beatae nulla, doloremque rerum sed corrupti quae amet minima nihil! Reprehenderit rem ipsa impedit repudiandae est eum doloremque aliquam sed eius! Eius quos commodi, quis aspernatur mollitia, cum voluptatem deserunt tempora aliquam blanditiis, harum alias ex. Culpa commodi necessitatibus accusantium veniam esse eveniet repudiandae, suscipit ducimus fugiat ut.</div>
+        <div class="item3 item">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat eius fugiat sit non amet, similique impedit omnis? Nisi reprehenderit illum quisquam numquam dignissimos! Quod dolores culpa assumenda suscipit quia. Repudiandae quasi perspiciatis numquam vitae qui incidunt nobis eveniet? Labore, facere ex. Ipsam nisi iusto tempora non expedita laborum earum?</div>
+        <div class="item4 item">4</div>
+        <div class="item5 item">5</div>
+        <div class="item6 item">6</div>
+        <div class="item7 item">7</div>
+        <div class="item8 item">8</div>
+        <div class="item9 item">9</div>
+    </div>
+</body>
+</html>
